@@ -1,15 +1,15 @@
-id = "groovy"
-name = "Groovy"
-version = "1.3.0"
+id = "groovy-enhanced"
+name = "Groovy-Enhanced"
+version = "1.4.0"
 schema_version = 1
-authors = ["Valentine Briese <valentinegb@icloud.com>"]
-description = "Groovy (build.gradle) support."
-repository = "https://github.com/valentinegb/zed-groovy"
+authors = ["Valentine Briese <valentinegb@icloud.com>", "hdbeworks@gmail.com"]
+description = "Enhanced Groovy (build.gradle) support."
+repository = "https://github.com/HBDE-work/zed-groovy-enhanced"
 
-[language_servers.groovy]
-name = "Groovy"
+[language_servers.groovy-enhanced]
+name = "Groovy Enhanced"
 language = "Groovy"
 
 [grammars.groovy]
 repository = "https://github.com/murtaza64/tree-sitter-groovy"
-rev = "86911590a8e46d71301c66468e5620d9faa5b6af"
+rev = "deb0dcf8c4544f07564060f6e9b9f6e4b0bfc27d"
