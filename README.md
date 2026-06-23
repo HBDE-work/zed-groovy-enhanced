@@ -1,18 +1,32 @@
 # Groovy Zed Extension
 
-> [!WARNING]
-> This project has been archived and will not receive further updates.
-> Unfortunately I simply do not have the time or interest to work on this
-> anymore. If you would like to see this project continue, please feel free to
-> fork it! If a successor is born, I give permission for this version of the
-> extension to be removed from Zed's extensions repository. I would like my name
-> to be included in the authors list of a successor extension if the majority of
-> the code is code that I wrote, however, at some point when little of my
-> original code remains, it's reasonable to say I'm no longer responsible for
-> enough of the extension for my name to be included in the authors list.
->
-> \- Valentine Briese
+> [!NOTE]
+> This fork intends to enhance the groovy support in zed.
+> Thanks to https://github.com/valentinegb for the initial implementation!
+
+---
 
 Zed Groovy support.
 
 <img width="1092" alt="Screenshot 2024-05-16 at 10 07 07 PM" src="https://github.com/valentinegb/zed-groovy/assets/35977727/029d56f4-5852-4692-a98f-d42b1388f3e4">
+
+## Enhancements
+
+### support specific java version for groovy LSP
+
+Status: **Implemented**
+
+#### Config Example
+```jsonc
+"lsp" : {
+    "groovy-enhanced": {
+        "settings": {
+            "javaHome": "/usr/lib/jvm/java-11-openjdk-amd64", // configure matching java for the system groovy version
+        },
+    },
+}
+```
+
+### fix LSP deserialization errors
+
+Status: **TODO**
